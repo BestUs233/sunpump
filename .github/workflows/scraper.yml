@@ -38,3 +38,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./scraper  # 修改为实际输出目录
+          publish_branch: gh-pages  # 推送到新的 gh-pages 分支
