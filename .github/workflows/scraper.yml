@@ -16,13 +16,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: '16'  # 使用的 Node.js 版本
+          node-version: '18'  # 使用 Node.js 版本 18
 
       - name: Install dependencies
         run: |
           cd scraper
-          npm install puppeteer
-          ls -al scraper  # 列出内容以确认文件存在
+          npm install puppeteer      # 安装依赖
+          ls -al                    # 列出目录以确认内容
 
       - name: Run scraper
         run: |
